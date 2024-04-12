@@ -1,77 +1,63 @@
-@import url("https://fonts.googleapis.com/css2family-Poppins&family-Roboto&display=swap");
-
-*{
-    font: normal none 1em Georgia, Didot, New Century Schoolbook, TeX Gyre Schola, serif;
-}
-
-body{
+body
+{
 	background-color: #00236D;
 }
 
-.container{
-	background-color: #002D8E;
-	margin: 0 auto;
+header
+{
+	background-color: #002095;
+	text-align: center;
+	font: normal bold 2em Product Sans;
+	color: #e49438;
+	height: 50px;
+	padding: 0px;
+	padding-top: 10px;
+	margin-bottom: 0px; 
+	background: url(images/bg.png) #11064d top left repeat fixed;
 }
 
-.container .heading{
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-    margin-bottom: 20px;
+p {
+    color: #e98f3b;
+    background-color: #11064d;
+    margin-bottom: .5;
+    padding: 0 0 10px 25px;
+	word-spacing: 0em;
+	text-transform: none;
+	letter-spacing: 0em;
+	text-indent: 1em;
+	line-height: 1em;
+	font: normal normal .85em Trebuchet MS, Gill Sans, sans-serif;
+    
 }
 
-.container .accordion-wrapper {
-    padding: 0 20px;
+nav
+{
+	background-color: #FFB746;
+	color: #002095;
+	text-align: center;
+	line-height: 100%;
+	display: block;
+	padding: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-.container .accordion {
-    margin-bottom: 20px;
-    cursor: pointer;
+ul
+{
+	color:#e98f3b;
+	background-color: #11064d;
+	list-style-type: circle;
+	list-style-position: outside;
+	word-spacing: .03em;
+	text-transform: none;
+	letter-spacing: 0em;
+	font: normal normal .85em Trebuchet MS, Gill Sans, sans-serif;
 }
 
-.container .accordion.active .accordion-heading{
-    background: #3e57d0;
-    color: #fff;
-}
-
-.container .accordion.active .accordion-heading i{
-    color: #fff;
-    transform: rotate(180deg);
-    transition: transform 0.2s 0.1s;
-}
-
-.container .accordion.active .accordion-content{
-    display: block;
-}
-
-.container .accordion-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    background: #fff;
-    border: 2px solid #333;
-    padding: 15px 20px;
-}
-
-.container .accordion-heading h3{
-    font-size: 20px;
-}
-
-.container .accordion-content{
-    padding: 15px 20px;
-    border: 2px solid #333;
-    font-size: 15px;
-    background: #fff;
-    border-top: 0;
-    display: none;
-    animation: animate 0.2s linear backwards;
-    line-height: 2;
-    transform-origin: top;
-}
-
-@keyframes animate{
-    0%{
-        transform: scaleY(0);
-    }
+footer
+{
+	background-color: #FF9427;
+	color: #002095;
+	padding: 5px;
+	clear: both;
 }

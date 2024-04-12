@@ -1,82 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Dravin Gibson</title>
-        <link rel="shortcut icon" href="images\favicon.png"/>
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    </head>
-    <body>
-        <header>Dravin Gibson</header>
-        <div class="container">
-            <h1 class="heading">Frequently Asked Questions</h1>
-            <div class="accordion-wrapper">
-                <div class="accordion">
-                    <div class="accordion-heading">
-                        <h3>Basic Information</h3>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <p class="accordion-content">
-                        My birth name is <strong>Dravin Gibson</strong>.<br />
-                        I am <em>16</em> years old.<br />
-                        My birthday is on the <strong><em>8th of June</em></strong>.
-                    </p>
-                </div>
-            </div>
-            <div class="accordion-wrapper">
-                <div class="accordion">
-                    <div class="accordion-heading">
-                        <h3>Family</h3>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <p class="accordion-content">
-                        One brother (18)<br />
-                        One sister (19)
-                    </p>
-                </div>
-            </div>
-            <div class="accordion-wrapper">
-                <div class="accordion">
-                    <div class="accordion-heading">
-                        <h3>Pets</h3>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <p class="accordion-content">
-                        I have three pets all together.<br />
-                        One male Husky<br />
-                        One Siamese cat of each gender
-                    </p>
-                </div>
-            </div>
-            <div class="accordion-wrapper">
-                <div class="accordion">
-                    <div class="accordion-heading">
-                        <h3>Hobbies</h3>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <p class="accordion-content">
-                        For my hobbies, I usually spend my free time playing
-						games with friends, hanging out with friends, and/or
-						listening to music. I also occasionally indulge myself
-						by watching television from time to time. One of my
-						favorite sites to explore and 
-						spend time on is <a href="https://www.youtube.com/"> Youtube.com.</a><br /><br />
-					    My <a href="https://mrgeiger.com/"> coding instructor's website</a> is a valuable resource for 
-						my future coding ventures while I am attending Four County
-						Career Center. Such ventures might include making a game 
-						of<a href="https://www.greenfoot.org/scenarios/30053"> pong.</a>
-                    </p>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <title>accordion demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+  <body>
+    <header>Dravin Gibson</header>
 
-            <footer>
-                <h4>&copy; Copyright Dravin Gibson 2023</h4>
-            </footer>
-
+    <nav>
+      <div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-link" href="https://fccc-sd.github.io/bootstrap-dgibson24/">Return to previous site</a>
+          </div>
         </div>
-        <script src="main.js"></script>
-    </body>
+      </div>
+    </nav>
+
+    <div id="accordion">
+      <h3>Basic Information</h3>
+      <div>
+        <p>
+          <br />My birth name is <strong>Dravin Gibson</strong>.
+          <br />I am <em>18</em> years old.
+          <br />My birthday is on the <strong><em>8th of June</em></strong>.
+        </p>
+      </div>
+      <h3>Family</h3>
+      <div>
+        <p>
+          <br />I have two siblings.
+          <br /><br />-One brother (19)
+          <br />-One sister (20)
+        </p>
+      </div>
+      <h3>Pets</h3>
+      <div>
+        <p>
+          <br />I have seven pets all together.
+          <br /><br />-One husky and one Chihuahua
+          <br />-Three Maine Coons
+          <br />-Two Siamese cats
+        </p>
+      </div>
+    </div>
+    
+    <script>
+    $( "#accordion" ).accordion();
+    </script>
+ 
+  </body>
 </html>
